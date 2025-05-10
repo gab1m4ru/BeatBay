@@ -1,8 +1,10 @@
 import React from "react";
-import './Home.css';
+import './_home.scss';
 
-import { ReactComponent as ArrowBack } from '../../../assets/icons/back.svg';
+import { ReactComponent as BackToHome } from '../../../assets/icons/to-home.svg';
 import { ReactComponent as Search } from '../../../assets/icons/search.svg';
+
+import { ReactComponent as Notifications } from '../../../assets/icons/notifications.svg';
 
 function SearchRequest() {
   const searchValue = document.getElementById("search-input");
@@ -11,12 +13,19 @@ function SearchRequest() {
 
 const Home = () => {
   return (
-    <div style={{ display: "flex", alignItems: "center", padding: "30px" }}>
-      <button className="back-btn"><ArrowBack/></button>
+    <div className="home-body">
+      <button className="back-btn btn"><BackToHome/></button>
 
-      <div className="search-bar">
-        <button onClick={SearchRequest}><Search/></button>
-        <input id="search-input" type="search" className="search__input" placeholder="Search music, artist, albums..."/>
+      <div 
+        className="right-side"
+        style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}
+      >
+        <div className="search-bar">
+          <button onClick={SearchRequest}><Search/></button>
+          <input id="search-input" type="search" className="search__input" placeholder="Search music, artist, albums..."/>
+        </div>
+
+        <button className="notifications-btn btn"><Notifications /></button>
       </div>
     </div>
   );

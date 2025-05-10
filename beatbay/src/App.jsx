@@ -1,14 +1,16 @@
 import React from "react";
 import "./styles/main.scss";
 
-import Aside from "./components/elements/Aside/Aside";
+import LeftSide from "./components/elements/Asides/LeftSide";
+import RightSide from "./components/elements/Asides/RightSide";
 import Home from "./components/pages/Home/Home";
 
 const App = () => {
   return (
     <div className="wrapper">
-      <Aside />
+      <LeftSide />
       <Home />
+      <RightSide />
     </div>
   );
 };

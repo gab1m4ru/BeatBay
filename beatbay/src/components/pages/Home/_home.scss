@@ -1,0 +1,30 @@
+.home-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.875rem;
+  max-height: fit-content;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  
+  width: 400px;
+  padding: 0 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .08);
+
+  input {
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: none;
+
+    width: 100%;
+    padding: 1rem 0;
+  }
+}

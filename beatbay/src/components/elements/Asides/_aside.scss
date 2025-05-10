@@ -74,3 +74,36 @@
 .new__playlist-btn:hover {
   color: #fff;
 }
+
+.user-profile {
+  display: flex;
+  align-items: center;
+
+  &__name {
+    font-weight: 500;
+  }
+
+  &__status {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 4px;
+
+    font-weight: 400;
+    font-size: .875rem;
+
+    span::after {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #ccc;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

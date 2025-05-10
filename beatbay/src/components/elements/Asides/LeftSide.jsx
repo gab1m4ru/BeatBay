@@ -47,7 +47,7 @@ document.body.addEventListener('click', (event) => {
 })
 
 
-const Aside = () => {
+const LeftSide = () => {
   return (
     <aside
       className="aside-body"
@@ -101,4 +101,4 @@ const Aside = () => {
   );
 };
 
-export default Aside;
+export default LeftSide;

@@ -1,0 +1,38 @@
+.back-btn {
+  padding: 14px;
+  max-height: 48px;
+
+  border-radius: 25%;
+  background: rgba(255, 255, 255, .08);
+
+  transition: background .1s ease;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, .15);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+  width: 400px;
+  padding: 0 10px 0 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .08);
+  
+  button {
+    height: 24px;
+  }
+
+  input {
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: none;
+
+    width: 100%;
+    padding: 16px 0 16px 0;
+  }
+}

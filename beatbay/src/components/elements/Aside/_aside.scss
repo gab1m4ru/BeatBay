@@ -1,0 +1,76 @@
+.aside-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 15em;
+  height: 100%;
+  padding: 30px 0 30px 30px;
+  background: #212121;
+}
+
+.aside__block {
+  display: block;
+  width: 15em;
+  margin-top: 40px;
+  margin-left: -30px;
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+
+  font-weight: 400;
+
+  width: 100%;
+  height: 48px;
+  padding-left: 30px;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, .06);
+}
+
+.menu-item.active {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+  color: rgba(29, 185, 84, 1);
+  span { color: #fff; }
+}
+
+.menu-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 3px 0 0 3px;
+  width: 6px;
+  height: 100%;
+  background: #1DB954;
+  transform: scaleY(0);
+  transition: transform 0.3s ease-in-out; /* Smoth animation */
+}
+
+.menu-item.active::after {
+  transform: scaleY(1);
+}
+
+.aside__block-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-left: 30px;
+}
+
+.new__playlist-btn {
+  font-size: 20px;
+  font-weight: 600;
+
+  transition: color .1s ease;
+}
+
+.new__playlist-btn:hover {
+  color: #fff;
+}

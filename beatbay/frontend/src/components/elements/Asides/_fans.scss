@@ -1,0 +1,32 @@
+.fans__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  button {
+    font-weight: 500;
+    color: rgba(29, 185, 84, 1);
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+.fans__artists {
+  position: relative;
+  margin-top: 1.25rem;
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(0, 0, 0, );
+  }
+}
